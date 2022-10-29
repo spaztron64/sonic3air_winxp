@@ -1,3 +1,9 @@
+This fork of Sonic 3 A.I.R. is modified just enough for the game to not be completely broken on Windows XP and 2003. It still needs XomPie patching to be fully operable. So far it's only been tested with a Release build (not Release_Enduser).
+
+The directory structure is different from a typical official release. You want the structure of the game's root directory to have the "bin", "data", "saves", and "scripts" directories, along with the config.json and oxygenscript.json files. The game binary should be in "bin\Release_x86\". The game will not work otherwise. Mods and other user data are stored "%username%\My Documents\Sonic3AIR".
+
+Example release will be provided in the Releases tab.
+
 # Sonic 3 A.I.R.
 
 Source code incl. dependencies for "Sonic 3 - Angel Island Revisited", a fan-made remaster of Sonic 3 & Knuckles.
