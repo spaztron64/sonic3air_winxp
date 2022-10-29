@@ -175,17 +175,17 @@ void SocketAddress::assureIpPort() const
 	{
 		if (mHasSockAddr)
 		{
-			char myIP[512];
-			inet_ntop(reinterpret_cast<sockaddr_storage&>(mSockAddr).ss_family, &(reinterpret_cast<sockaddr_in&>(mSockAddr).sin_addr), myIP, sizeof(myIP));
-			mIP = myIP;
-			mPort = ntohs(reinterpret_cast<sockaddr_in&>(mSockAddr).sin_port);
+			//char myIP[512];
+			//inet_ntop(reinterpret_cast<sockaddr_storage&>(mSockAddr).ss_family, &(reinterpret_cast<sockaddr_in&>(mSockAddr).sin_addr), myIP, sizeof(myIP));
+			//mIP = myIP;
+			//mPort = ntohs(reinterpret_cast<sockaddr_in&>(mSockAddr).sin_port);
 		}
 		else
 		{
-			mIP.clear();
-			mPort = 0;
+			//mIP.clear();
+			//mPort = 0;
 		}
-		mHasIpPort = true;
+		//mHasIpPort = true;
 	}
 }
 

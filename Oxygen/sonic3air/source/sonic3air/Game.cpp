@@ -13,7 +13,7 @@
 #include "sonic3air/data/SharedDatabase.h"
 #include "sonic3air/data/TimeAttackData.h"
 #include "sonic3air/helper/GameUtils.h"
-#include "sonic3air/helper/DiscordIntegration.h"
+//#include "sonic3air/helper/DiscordIntegration.h"
 #include "sonic3air/menu/GameApp.h"
 #include "sonic3air/menu/SharedResources.h"
 #include "sonic3air/scriptimpl/ScriptImplementations.h"
@@ -39,35 +39,13 @@ namespace
 {
 	const constexpr float CUTSCENE_SKIPPING_SPEED = 4.0f;	// Should be more or less "unique", not one of the debug game speeds (3.0f or 5.0f)
 
-	void setDiscordDetails(lemon::StringRef text)
-	{
-		if (text.isValid())
-			DiscordIntegration::setModdedDetails(text.getString());
-	}
-
-	void setDiscordState(lemon::StringRef text)
-	{
-		if (text.isValid())
-			DiscordIntegration::setModdedState(text.getString());
-	}
-
-	void setDiscordLargeImage(lemon::StringRef imageName)
-	{
-		if (imageName.isValid())
-			DiscordIntegration::setModdedLargeImage(imageName.getString());
-	}
-
-	void setDiscordSmallImage(lemon::StringRef imageName)
-	{
-		if (imageName.isValid())
-			DiscordIntegration::setModdedSmallImage(imageName.getString());
-	}
 
 	void setUnderwaterAudioEffect(uint8 value)
 	{
 		AudioOut::instance().enableUnderwaterEffect((float)value / 255.0f);
 	}
 }
+
 
 
 Game::Game()
@@ -80,14 +58,14 @@ void Game::startup()
 	mBlueSpheresRendering.startup();
 	mGameClient.setupClient();
 
-	DiscordIntegration::startup();
+	//DiscordIntegration::startup();
 }
 
 void Game::shutdown()
 {
 	mPlayerProgress.save();
 
-	DiscordIntegration::shutdown();
+	//DiscordIntegration::shutdown();
 }
 
 void Game::update(float timeElapsed)
@@ -99,15 +77,15 @@ void Game::update(float timeElapsed)
 	mDynamicSprites.updateSpriteRedirects();
 
 	// Discord rich presence update
-	{
-		mTimeoutUntilDiscordRefresh -= timeElapsed;
-		if (mTimeoutUntilDiscordRefresh <= 0.0f)
-		{
-			DiscordIntegration::updateInfo(mMode, mSubMode, EmulatorInterface::instance());
-			mTimeoutUntilDiscordRefresh = 3.0f;
-		}
-		DiscordIntegration::update();
-	}
+	//{
+		//mTimeoutUntilDiscordRefresh -= timeElapsed;
+		//if (mTimeoutUntilDiscordRefresh <= 0.0f)
+		//{
+			//DiscordIntegration::updateInfo(mMode, mSubMode, EmulatorInterface::instance());
+			//mTimeoutUntilDiscordRefresh = 3.0f;
+		//}
+		//DiscordIntegration::update();
+	//}
 
 #ifndef ENDUSER
 	// Just for testing
@@ -216,19 +194,19 @@ void Game::registerScriptBindings(lemon::Module& module)
 	}
 
 	// Discord
-	{
-		module.addNativeFunction("Game.setDiscordDetails", lemon::wrap(&setDiscordDetails), defaultFlags)
-			.setParameterInfo(0, "text");
-
-		module.addNativeFunction("Game.setDiscordState", lemon::wrap(&setDiscordState), defaultFlags)
-			.setParameterInfo(0, "text");
-
-		module.addNativeFunction("Game.setDiscordLargeImage", lemon::wrap(&setDiscordLargeImage), defaultFlags)
-			.setParameterInfo(0, "imageName");
-
-		module.addNativeFunction("Game.setDiscordSmallImage", lemon::wrap(&setDiscordSmallImage), defaultFlags)
-			.setParameterInfo(0, "imageName");
-	}
+	//{
+	//	module.addNativeFunction("Game.setDiscordDetails", lemon::wrap(&setDiscordDetails), defaultFlags)
+	//		.setParameterInfo(0, "text");
+//
+	//	module.addNativeFunction("Game.setDiscordState", lemon::wrap(&setDiscordState), defaultFlags)
+	//		.setParameterInfo(0, "text");
+//
+	//	module.addNativeFunction("Game.setDiscordLargeImage", lemon::wrap(&setDiscordLargeImage), defaultFlags)
+	//		.setParameterInfo(0, "imageName");
+//
+	//	module.addNativeFunction("Game.setDiscordSmallImage", lemon::wrap(&setDiscordSmallImage), defaultFlags)
+	//		.setParameterInfo(0, "imageName");
+	//}
 
 	// Audio
 	{

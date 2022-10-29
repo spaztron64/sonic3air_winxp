@@ -41,7 +41,6 @@
     <ClCompile Include="..\..\source\sonic3air\Game.cpp" />
     <ClCompile Include="..\..\source\sonic3air\generator\ResourceScriptGenerator.cpp" />
     <ClCompile Include="..\..\source\sonic3air\helper\BlueSpheresRendering.cpp" />
-    <ClCompile Include="..\..\source\sonic3air\helper\DiscordIntegration.cpp" />
     <ClCompile Include="..\..\source\sonic3air\helper\GameUtils.cpp" />
     <ClCompile Include="..\..\source\sonic3air\main.cpp">
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -85,7 +84,6 @@
     <ClInclude Include="..\..\source\sonic3air\Game.h" />
     <ClInclude Include="..\..\source\sonic3air\generator\ResourceScriptGenerator.h" />
     <ClInclude Include="..\..\source\sonic3air\helper\BlueSpheresRendering.h" />
-    <ClInclude Include="..\..\source\sonic3air\helper\DiscordIntegration.h" />
     <ClInclude Include="..\..\source\sonic3air\helper\GameUtils.h" />
     <ClInclude Include="..\..\source\sonic3air\menu\context\ApplicationContextMenu.h" />
     <ClInclude Include="..\..\source\sonic3air\menu\ExtrasMenu.h" />
@@ -125,14 +123,14 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3D05398E-EEAC-42DC-82BF-BCD901A3F4BF}</ProjectGuid>
     <RootNamespace>genplusgx</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
     <ProjectName>sonic3air</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -144,8 +142,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -158,7 +156,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Enduser|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -242,7 +240,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>../../../lemonscript/lib/$(BuildCode);../../../oxygenengine/build/_vstudio/lib/$(Configuration)_$(BuildCode);$(SolutionDir)lib/$(Configuration)_$(BuildCode);$(SolutionDir)../../source/external/discord_game_sdk/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>lemonscript.lib;oxygen_netcore.lib;oxygen.lib;discord_game_sdk.lib;discord_game_sdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lemonscript.lib;oxygen_netcore.lib;oxygen.lib;vcruntimed.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
@@ -296,14 +294,16 @@ exit /b 0</Command>
       <PrecompiledHeaderFile>sonic3air/pch.h</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zm10 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>../../../lemonscript/lib/$(BuildCode);../../../oxygenengine/build/_vstudio/lib/$(Configuration)_$(BuildCode);$(SolutionDir)lib/$(Configuration)_$(BuildCode);$(SolutionDir)../../source/external/discord_game_sdk/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>lemonscript.lib;oxygen_netcore.lib;oxygen.lib;discord_game_sdk.lib;discord_game_sdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lemonscript.lib;oxygen_netcore.lib;oxygen.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/VERBOSE %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
       <Command>robocopy $(ProjectDir)..\..\..\oxygenengine\data\shader $(ProjectDir)..\..\data\shader /mir &gt; nul

@@ -74,7 +74,7 @@ namespace
 
 			if (text.isValid())
 			{
-				RMX_ERROR("Script assertion failed:\n'" << text.getString() << "'.\nIn " << locationText << ".", );
+				//RMX_ERROR("Script assertion failed:\n'" << text.getString() << "'.\nIn " << locationText << ".", );
 			}
 			else
 			{

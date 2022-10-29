@@ -1,0 +1,23 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  vorbisfile.c
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(258): warning C4244: 'function': conversion from 'ogg_int64_t' to 'long', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(276): warning C4244: '=': conversion from 'ogg_int64_t' to 'int', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(548): warning C4244: 'return': conversion from 'ogg_int64_t' to 'int', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(569): warning C4244: 'return': conversion from 'ogg_int64_t' to 'int', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(572): warning C4244: 'return': conversion from 'ogg_int64_t' to 'int', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(582): warning C4244: 'return': conversion from 'ogg_int64_t' to 'int', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(644): warning C4244: 'return': conversion from 'ogg_int64_t' to 'int', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(877): warning C4244: 'function': conversion from 'ogg_int64_t' to 'long', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1015): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1121): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1122): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1126): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1154): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1763): warning C4244: '=': conversion from 'ogg_int64_t' to 'long', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1800): warning C4244: 'initializing': conversion from 'double' to 'ogg_int64_t', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(1830): warning C4244: 'initializing': conversion from 'double' to 'ogg_int64_t', possible loss of data
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\vorbisfile.c(2169): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Microsoft.CppBuild.targets(1397,5): warning MSB8012: TargetPath(C:\sonic3air\framework\external\ogg-vorbis\libvorbis\win32\VS2010\Win32\Release\libvorbisfile.lib) does not match the Library's OutputFile property value (C:\sonic3air\framework\external\ogg-vorbis\libvorbis\win32\VS2010\Win32\Release\libvorbisfile_static.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Microsoft.CppBuild.targets(1399,5): warning MSB8012: TargetName(libvorbisfile) does not match the Library's OutputFile property value (libvorbisfile_static). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libvorbisfile_static.vcxproj -> C:\sonic3air\framework\external\ogg-vorbis\libvorbis\win32\VS2010\Win32\Release\libvorbisfile.lib

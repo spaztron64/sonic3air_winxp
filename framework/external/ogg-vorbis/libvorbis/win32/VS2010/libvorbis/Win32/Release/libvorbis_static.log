@@ -1,0 +1,50 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  analysis.c
+  bitrate.c
+  block.c
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\block.c(255): warning C4456: declaration of 'i' hides previous local declaration
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\block.c(171): note: see declaration of 'i'
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\block.c(1028): warning C4456: declaration of 'i' hides previous local declaration
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\block.c(971): note: see declaration of 'i'
+  codebook.c
+  envelope.c
+  floor0.c
+  floor1.c
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\floor1.c(496): warning C4457: declaration of 'a' hides function parameter
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\floor1.c(456): note: see declaration of 'a'
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\floor1.c(713): warning C4456: declaration of 'y0' hides previous local declaration
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\floor1.c(612): note: see declaration of 'y0'
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\floor1.c(714): warning C4456: declaration of 'y1' hides previous local declaration
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\floor1.c(613): note: see declaration of 'y1'
+  info.c
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(64): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(73): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(74): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(97): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(98): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(119): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\info.c(120): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  lookup.c
+  lpc.c
+  lsp.c
+  mapping0.c
+  mdct.c
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\mdct.c(78): warning C4456: declaration of 'i' hides previous local declaration
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\mdct.c(55): note: see declaration of 'i'
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\mdct.c(439): warning C4456: declaration of 'iX' hides previous local declaration
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\mdct.c(403): note: see declaration of 'iX'
+  psy.c
+c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\psy.c(238): warning C4456: declaration of 'bin' hides previous local declaration
+  c:\sonic3air\framework\external\ogg-vorbis\libvorbis\lib\psy.c(159): note: see declaration of 'bin'
+  registry.c
+  res0.c
+  sharedbook.c
+  smallft.c
+  synthesis.c
+  vorbisenc.c
+  Generating Code...
+  Compiling...
+  window.c
+  Generating Code...
+  libvorbis_static.vcxproj -> C:\sonic3air\framework\external\ogg-vorbis\libvorbis\win32\VS2010\Win32\Release\libvorbis_static.lib

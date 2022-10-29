@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  PlatformFunctions.cpp
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\shlobj.h(1151): warning C4091: 'typedef ': ignored on left of 'tagGPFIDL_FLAGS' when no variable is declared
+c:\sonic3air\oxygen\oxygenengine\source\oxygen\base\platformfunctions.cpp(402): warning C4101: 'buf': unreferenced local variable
+  oxygen.vcxproj -> C:\sonic3air\Oxygen\oxygenengine\build\_vstudio\lib\Release_x86\oxygen.lib

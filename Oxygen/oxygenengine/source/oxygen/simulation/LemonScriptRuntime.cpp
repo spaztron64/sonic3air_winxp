@@ -260,11 +260,11 @@ bool LemonScriptRuntime::callFunctionByNameAtLabel(lemon::FlyweightString functi
 	{
 		if (labelName.isEmpty())
 		{
-			RMX_ERROR("Failed to call function '" << functionName.getString() << "'", );
+			//RMX_ERROR("Failed to call function '" << functionName.getString() << "'", );
 		}
 		else
 		{
-			RMX_ERROR("Failed to call label '" << labelName.getString() << "' in '" << functionName.getString() << "'", );
+			//RMX_ERROR("Failed to call label '" << labelName.getString() << "' in '" << functionName.getString() << "'", );
 		}
 	}
 	return success;

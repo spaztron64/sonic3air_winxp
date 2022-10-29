@@ -92,7 +92,7 @@ static uLong   ZCALLBACK fwrite_file_func OF((voidpf opaque, voidpf stream, cons
 static ZPOS64_T ZCALLBACK ftell64_file_func OF((voidpf opaque, voidpf stream));
 static long    ZCALLBACK fseek64_file_func OF((voidpf opaque, voidpf stream, ZPOS64_T offset, int origin));
 static int     ZCALLBACK fclose_file_func OF((voidpf opaque, voidpf stream));
-static int     ZCALLBACK ferror_file_func OF((voidpf opaque, voidpf stream));
+//static int     ZCALLBACK ferror_file_func OF((voidpf opaque, voidpf stream));
 
 static voidpf ZCALLBACK fopen_file_func (voidpf opaque, const char* filename, int mode)
 {
@@ -227,10 +227,10 @@ static int ZCALLBACK fclose_file_func (voidpf opaque, voidpf stream)
 
 static int ZCALLBACK ferror_file_func (voidpf opaque, voidpf stream)
 {
-    (void)opaque;
-    int ret;
-    ret = ferror((FILE *)stream);
-    return ret;
+//    (void)opaque;
+    //int ret;
+    //ret = ferror((FILE *)stream);
+    //return ret;
 }
 
 void fill_fopen_filefunc (pzlib_filefunc_def)
@@ -242,7 +242,7 @@ void fill_fopen_filefunc (pzlib_filefunc_def)
     pzlib_filefunc_def->ztell_file = ftell_file_func;
     pzlib_filefunc_def->zseek_file = fseek_file_func;
     pzlib_filefunc_def->zclose_file = fclose_file_func;
-    pzlib_filefunc_def->zerror_file = ferror_file_func;
+    //pzlib_filefunc_def->zerror_file = ferror_file_func;
     pzlib_filefunc_def->opaque = NULL;
 }
 
@@ -254,6 +254,6 @@ void fill_fopen64_filefunc (zlib_filefunc64_def*  pzlib_filefunc_def)
     pzlib_filefunc_def->ztell64_file = ftell64_file_func;
     pzlib_filefunc_def->zseek64_file = fseek64_file_func;
     pzlib_filefunc_def->zclose_file = fclose_file_func;
-    pzlib_filefunc_def->zerror_file = ferror_file_func;
+    //pzlib_filefunc_def->zerror_file = ferror_file_func;
     pzlib_filefunc_def->opaque = NULL;
 }

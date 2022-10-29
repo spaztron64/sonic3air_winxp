@@ -215,7 +215,7 @@ const SpriteCache::CacheItem* SpriteCache::getSprite(uint64 key)
 			const std::string_view* str = LemonScriptRuntime::tryResolveStringHash(key);
 			if (nullptr != str)
 			{
-				RMX_ERROR("Invalid sprite cache key with string '" << *str << "' (hash is " << rmx::hexString(key) << ")", );
+				//RMX_ERROR("Invalid sprite cache key with string '" << *str << "' (hash is " << rmx::hexString(key) << ")", );
 			}
 			else
 			{
@@ -325,7 +325,7 @@ void SpriteCache::dumpSprite(uint64 key, std::string_view categoryKey, uint8 spr
 		}
 		else
 		{
-			RMX_ERROR("Can't dump component sprites (attempted to dump '" << categoryKey << "' sprite " << rmx::hexString(spriteNumber, 2) << ")", );
+			//RMX_ERROR("Can't dump component sprites (attempted to dump '" << categoryKey << "' sprite " << rmx::hexString(spriteNumber, 2) << ")", );
 		}
 		item->mGotDumped = true;
 	}

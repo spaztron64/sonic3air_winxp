@@ -320,7 +320,7 @@ void PlatformFunctions::onEngineStartup()
 {
 #if defined(PLATFORM_WINDOWS)
 	// Handle DPI scaling by Windows
-	SetProcessDPIAware();
+	//SetProcessDPIAware();
 #endif
 }
 
@@ -342,13 +342,16 @@ void PlatformFunctions::setAppIcon(int iconResource)
 std::wstring PlatformFunctions::getAppDataPath()
 {
 #ifdef PLATFORM_WINDOWS
-	PWSTR path = NULL;
-	if (S_OK == SHGetKnownFolderPath(FOLDERID_RoamingAppData, KF_FLAG_DONT_UNEXPAND | KF_FLAG_CREATE, nullptr, &path))
-	{
-		std::wstring result(path);
-		CoTaskMemFree(path);
+	LPWSTR pszPath = (LPWSTR)malloc(MAX_PATH);
+	//PWSTR path = NULL;
+	//if (S_OK == SHGetKnownFolderPath(FOLDERID_RoamingAppData, KF_FLAG_DONT_UNEXPAND | KF_FLAG_CREATE, nullptr, &path))
+	//{
+	SHGetFolderPathW(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, pszPath);
+		std::wstring result((PWSTR)pszPath);
+		//CoTaskMemFree(pszPpath);
 		return result;
-	}
+	
+	//}
 #elif defined(PLATFORM_LINUX)
 	const String appDataDir = getLinuxAppDataDir();
 	if (!appDataDir.empty())
@@ -403,8 +406,8 @@ std::string PlatformFunctions::getCompactSystemTimeString()
 	tstruct = *localtime(&now);
 #endif
 	// Format example: "220629_114248"
-	std::strftime(buf, sizeof(buf), "%y%m%d_%H%M%S", &tstruct);
-	return buf;
+	//std::strftime(buf, sizeof(buf), "%y%m%d_%H%M%S", &tstruct);
+	return 0;
 }
 
 void PlatformFunctions::showMessageBox(const std::string& caption, const std::string& text)
