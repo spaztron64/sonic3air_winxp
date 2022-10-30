@@ -148,24 +148,24 @@ void SocketAddress::assureSockAddr() const
 {
 	if (!mHasSockAddr)
 	{
-		memset(&mSockAddr, 0, sizeof(mSockAddr));
+		//memset(&mSockAddr, 0, sizeof(mSockAddr));
 		bool success = false;
 		{
 			// IPv6
-			sockaddr_in6& addr = *reinterpret_cast<sockaddr_in6*>(&mSockAddr);
-			addr.sin6_family = AF_INET6;
-			addr.sin6_port = htons(mPort);
-			success = (1 == inet_pton(addr.sin6_family, mIP.c_str(), &addr.sin6_addr));
+			//sockaddr_in6& addr = *reinterpret_cast<sockaddr_in6*>(&mSockAddr);
+			//addr.sin6_family = AF_INET6;
+			//addr.sin6_port = htons(mPort);
+			//success = (1 == inet_pton(addr.sin6_family, mIP.c_str(), &addr.sin6_addr));
 		}
 		if (!success)
 		{
 			// IPv4
-			sockaddr_in& addr = *reinterpret_cast<sockaddr_in*>(&mSockAddr);
-			addr.sin_family = AF_INET;
-			addr.sin_port = htons(mPort);
-			inet_pton(addr.sin_family, mIP.c_str(), &addr.sin_addr);
+			//sockaddr_in& addr = *reinterpret_cast<sockaddr_in*>(&mSockAddr);
+			//addr.sin_family = AF_INET;
+			//addr.sin_port = htons(mPort);
+			//inet_pton(addr.sin_family, mIP.c_str(), &addr.sin_addr);
 		}
-		mHasSockAddr = true;
+		//mHasSockAddr = true;
 	}
 }
 

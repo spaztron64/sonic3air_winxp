@@ -1,2 +1,30 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  rmxmedia.cpp
+  AppFramework.cpp
+  AudioManager.cpp
+  AudioBuffer.cpp
+  AudioMixer.cpp
+  AudioReference.cpp
+  FileInputStreamSDL.cpp
+  FileProviderSDL.cpp
+  Font.cpp
+  OpenGLFontOutput.cpp
+  FontProcessor.cpp
+  FontSource.cpp
+  Framebuffer.cpp
+  FTX_System.cpp
+  GLTools.cpp
+  GuiBase.cpp
+  JobManager.cpp
+  Painter.cpp
+  Shader.cpp
+  SpriteAtlas.cpp
+  Texture.cpp
+  Generating Code...
+  Compiling...
+  Thread.cpp
+  VertexArrayObject.cpp
+  VideoBuffer.cpp
+  Generating Code...
+  glew.c
   rmxmedia.vcxproj -> C:\sonic3air\librmx\build\_vstudio\..\..\lib\x86\rmxmedia.lib

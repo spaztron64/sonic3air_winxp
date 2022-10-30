@@ -1,7 +1,13 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
-  LINK : 0 new modules and 1 (out of 710) modules have changed since prior linking
+  LINK : 0 new modules and 2 (out of 862) modules have changed since prior linking
+  
+  Searching libraries
+      Searching ..\..\..\lemonscript\lib\x86\lemonscript.lib:
+  
+  Finished searching libraries
   Starting pass 2
-       oxygen_netcore.lib(Sockets.obj)
+       oxygen.lib(EngineMain.obj)
+       oxygen.lib(OpenGLDrawer.obj)
        LIBCMT.lib(loadcfg.obj)
   Finished pass 2
   sonic3air.vcxproj -> C:\sonic3air\Oxygen\sonic3air\build\_vstudio\..\..\bin\Release_x86\Sonic3AIR.exe

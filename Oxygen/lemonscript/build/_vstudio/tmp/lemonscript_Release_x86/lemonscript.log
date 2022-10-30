@@ -1,2 +1,46 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  pch.cpp
+  Compiler.cpp
+  FunctionCompiler.cpp
+  LineNumberTranslation.cpp
+  Node.cpp
+  Operators.cpp
+  Parser.cpp
+  ParserHelper.cpp
+  Preprocessor.cpp
+  Token.cpp
+  TokenProcessing.cpp
+  TypeCasting.cpp
+  ConstantArray.cpp
+  DataType.cpp
+  Define.cpp
+  Function.cpp
+  FunctionWrapper.cpp
+  GlobalsLookup.cpp
+  Module.cpp
+  Opcode.cpp
+  Program.cpp
+  Generating Code...
+c:\sonic3air\oxygen\lemonscript\source\lemon\utility\flyweightstring.h(77): warning C4717: 'lemon::operator<<': recursive on all control paths, function will cause runtime stack overflow
+c:\sonic3air\oxygen\lemonscript\source\lemon\utility\flyweightstring.h(77): warning C4717: 'lemon::operator<<': recursive on all control paths, function will cause runtime stack overflow
+c:\sonic3air\oxygen\lemonscript\source\lemon\utility\flyweightstring.h(77): warning C4717: 'lemon::operator<<': recursive on all control paths, function will cause runtime stack overflow
+c:\sonic3air\oxygen\lemonscript\source\lemon\utility\flyweightstring.h(77): warning C4717: 'lemon::operator<<': recursive on all control paths, function will cause runtime stack overflow
+  Compiling...
+  StringRef.cpp
+  BuiltInFunctions.cpp
+  ControlFlow.cpp
+  OpcodeProcessor.cpp
+  DefaultOpcodeProvider.cpp
+  NativizedOpcodeProvider.cpp
+  OptimizedOpcodeProvider.cpp
+  RuntimeFunction.cpp
+  Runtime.cpp
+  StandardLibrary.cpp
+  Nativizer.cpp
+  SourceCodeWriter.cpp
+  Translator.cpp
+  FlyweightString.cpp
+  Generating Code...
+c:\sonic3air\oxygen\lemonscript\source\lemon\utility\flyweightstring.h(77): warning C4717: 'lemon::operator<<': recursive on all control paths, function will cause runtime stack overflow
+Node.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
   lemonscript.vcxproj -> C:\sonic3air\Oxygen\lemonscript\build\_vstudio\..\..\lib\x86\lemonscript.lib

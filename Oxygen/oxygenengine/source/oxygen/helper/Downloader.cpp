@@ -10,13 +10,13 @@
 #include "oxygen/helper/Downloader.h"
 
 #ifdef PLATFORM_WINDOWS
-	#define CURL_STATICLIB
-	#include <curl/curl.h>
+	//#define CURL_STATICLIB
+	//#include <curl/curl.h>
 
-	#pragma comment(lib, "libcurl.lib")
-	#pragma comment(lib, "ws2_32.lib")
-	#pragma comment(lib, "wldap32.lib")
-	#pragma comment(lib, "crypt32.lib")
+	//#pragma comment(lib, "libcurl.lib")
+	//#pragma comment(lib, "ws2_32.lib")
+	//#pragma comment(lib, "wldap32.lib")
+	//#pragma comment(lib, "crypt32.lib")
 #endif
 
 
@@ -66,20 +66,20 @@ size_t Downloader::writeData(void* data, size_t size, size_t nmemb)
 void Downloader::performDownload()
 {
 #ifdef PLATFORM_WINDOWS
-	CURL* curl = curl_easy_init();
-	if (nullptr == curl)
-	{
-		mState = State::FAILED;
-		return;
-	}
+	//CURL* curl = curl_easy_init();
+	//if (nullptr == curl)
+	//{
+	//	mState = State::FAILED;
+	//	return;
+	//}
 
-	mOutputFile.open(mOutputFilename, FILE_ACCESS_WRITE);
-	curl_easy_setopt(curl, CURLOPT_URL, mURL.c_str());
-	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &Downloader::writeDataStatic);
-	curl_easy_setopt(curl, CURLOPT_WRITEDATA, this);
-	const CURLcode res = curl_easy_perform(curl);
-	curl_easy_cleanup(curl);
-	mOutputFile.close();
-	mState = State::DONE;
+	//mOutputFile.open(mOutputFilename, FILE_ACCESS_WRITE);
+	//curl_easy_setopt(curl, CURLOPT_URL, mURL.c_str());
+	//curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &Downloader::writeDataStatic);
+	//curl_easy_setopt(curl, CURLOPT_WRITEDATA, this);
+	//const CURLcode res = curl_easy_perform(curl);
+	//curl_easy_cleanup(curl);
+	//mOutputFile.close();
+	//mState = State::DONE;
 #endif
 }

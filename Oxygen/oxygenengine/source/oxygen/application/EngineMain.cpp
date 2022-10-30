@@ -523,7 +523,7 @@ bool EngineMain::createWindow()
 	#if !defined(RMX_USE_GLES2)
 		{
 			// OpenGL 3.1 or 3.2
-			const int majorVersion = 3;
+			const int majorVersion = 1;
 		#if defined(PLATFORM_MAC)
 			// macOS needs OpenGL 3.2 for GLSL 140 shaders to work. https://stackoverflow.com/a/31805596
 			const int minorVersion = 2;
@@ -615,13 +615,13 @@ bool EngineMain::createWindow()
 		if (useOpenGL)
 		{
 			RMX_LOG_INFO("Creating OpenGL context...");
-			SDL_GLContext context = SDL_GL_CreateContext(mSDLWindow);
-			if (nullptr != context)
-			{
-				RMX_LOG_INFO("Vsync setup...");
-				setVSyncMode(config.mFrameSync);
-			}
-			else
+			//SDL_GLContext context = SDL_GL_CreateContext(mSDLWindow);
+			//if (nullptr != context)
+			//{
+			//	RMX_LOG_INFO("Vsync setup...");
+			//	setVSyncMode(config.mFrameSync);
+			//}
+			//else
 			{
 				RMX_LOG_INFO("Failed to create OpenGL context, fallback to pure software renderer");
 				config.mRenderMethod = Configuration::RenderMethod::SOFTWARE;

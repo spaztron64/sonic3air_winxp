@@ -1,2 +1,37 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  rmxbase.cpp
+  Basics.cpp
+  BinarySerializer.cpp
+  Bitmap.cpp
+  BitmapCodecBMP.cpp
+  BitmapCodecICO.cpp
+  BitmapCodecJPG.cpp
+  BitmapCodecPNG.cpp
+  Color.cpp
+  ErrorHandler.cpp
+  FileIO.cpp
+  FileSystem.cpp
+  JsonHelper.cpp
+  FileProvider.cpp
+  Logging.cpp
+  OneTimeAllocPool.cpp
+  RealFileProvider.cpp
+  RmxDeflate.cpp
+  FileCrawler.cpp
+  FileHandle.cpp
+  InputStream.cpp
+  Generating Code...
+  Compiling...
+  Math.cpp
+  OutputStream.cpp
+  RC4Encryption.cpp
+  String.cpp
+  Tools.cpp
+  VectorBinarySerializer.cpp
+  ZlibDeflate.cpp
+  Generating Code...
+  json_reader.cpp
+  json_value.cpp
+  json_writer.cpp
+  Generating Code...
   rmxbase.vcxproj -> C:\sonic3air\librmx\build\_vstudio\..\..\lib\x86\rmxbase.lib

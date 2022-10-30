@@ -1,0 +1,56 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  Vcpkg is unable to link because we cannot decide between Release and Debug libraries. Please define the property VcpkgConfiguration to be 'Release' or 'Debug' (currently 'LIB Release - DLL Windows SSPI').
+  curl_ctype.c
+  curl_multibyte.c
+  dynbuf.c
+  nonblock.c
+  strtoofft.c
+  timediff.c
+  version_win32.c
+  warnless.c
+  slist_wc.c
+  tool_binmode.c
+  tool_bname.c
+  tool_cb_dbg.c
+  tool_cb_hdr.c
+  tool_cb_prg.c
+  tool_cb_rea.c
+  tool_cb_see.c
+  tool_cb_wrt.c
+  tool_cfgable.c
+  tool_dirhie.c
+  tool_doswin.c
+  Generating Code...
+  Compiling...
+  tool_easysrc.c
+  tool_filetime.c
+  tool_findfile.c
+  tool_formparse.c
+  tool_getparam.c
+  tool_getpass.c
+  tool_help.c
+  tool_helpers.c
+  tool_hugehelp.c
+  tool_libinfo.c
+  tool_listhelp.c
+  tool_main.c
+  tool_msgs.c
+  tool_operate.c
+  tool_operhlp.c
+  tool_panykey.c
+  tool_paramhlp.c
+  tool_parsecfg.c
+  tool_progress.c
+  tool_setopt.c
+  Generating Code...
+  Compiling...
+  tool_sleep.c
+  tool_strdup.c
+  tool_urlglob.c
+  tool_util.c
+  tool_vms.c
+  tool_writeout.c
+  tool_writeout_json.c
+  tool_xattr.c
+  Generating Code...
+  curl.vcxproj -> C:\sonic3air\framework\external\curl\curl\projects\Windows\VC14.10\src\..\..\..\..\build\Win32\VC14.10\LIB Release - DLL Windows SSPI\curl.exe
